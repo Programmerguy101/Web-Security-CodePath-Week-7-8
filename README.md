@@ -1,8 +1,25 @@
 # Web-Security-CodePath-Week-7-8
 
 Hello. 
-![](Wordpress-1.gif)
-![](Wordpress-2.gif)
+1. DOM Cross-Site Scripting (XSS) via Post
+  - [x] Summary: A user can post a script as normal post and run a script once the post is published. 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Theme: Twenty Fifteen
+    - Tested in Version: 1.1
+    - Fixed in version: 1.2
+  - [x] GIF Walkthrough: ![](Wordpress-1.gif)
+  - [x] Steps to recreate: 
+  1. Insert this line of code into the post:
+  ```
+  http:// site.com/wp-content/themes/twentyfifteen/genericons/example.html#1<img/ src=1 onerror= alert(1)>
+  ```
+  
+  2. On the preview, we can see that the script is being ran. 
+  
+  - [x] Affected source code:
+    - [Link 1](https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss.html)
+
 2. Cross-Site Scripting (XSS) via Image Title
   - [x] Summary: A user can change the title of an image and attach it to a post in order to run a script once the image is clicked on. 
     - Vulnerability types: XSS
@@ -15,11 +32,10 @@ Hello.
   cengizhansahinsumofpwn<img src=a onerror=alert(document.cookie)>.jpg
   ```
   2. Create a new post and add a gallery including that picture.
-  3. On the preview, we can see that when a user clicks on the image the script is ran. 
+  3. On the preview, we can see that the script is being ran. 
   
   - [x] Affected source code:
     - [Link 1](https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html)
-![](Wordpress-3.gif)
 3. Stored Cross-Site Scripting
   - [x] Summary: A user with editing privileges can inject a script in a reply message which is executed when the mouse is hovered over the link.
     - Vulnerability types: XSS

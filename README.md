@@ -1,7 +1,9 @@
 # Web-Security-CodePath-Week-7-8
 
-Hello. 
-1. DOM Cross-Site Scripting (XSS) via Post
+##Penetrationing Test Report
+
+
+1. (Required) DOM Cross-Site Scripting (XSS) via Post
   - [x] Summary: A user can post a script as normal post and run a script once the post is published. 
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -20,7 +22,7 @@ Hello.
   - [x] Affected source code:
     - [Link 1](https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss.html)
 
-2. Cross-Site Scripting (XSS) via Image Title
+2. (Required) Cross-Site Scripting (XSS) via Image Title
   - [x] Summary: A user can change the title of an image and attach it to a post in order to run a script once the image is clicked on. 
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -36,7 +38,7 @@ Hello.
   
   - [x] Affected source code:
     - [Link 1](https://sumofpwn.nl/advisory/2016/persistent_cross_site_scripting_vulnerability_in_wordpress_due_to_unsafe_processing_of_file_names.html)
-3. Stored Cross-Site Scripting
+3. (Required) Stored Cross-Site Scripting
   - [x] Summary: A user with editing privileges can inject a script in a reply message which is executed when the mouse is hovered over the link.
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -50,7 +52,7 @@ Hello.
   2. Once someone hovers there mouse over the link, the script will be ran.
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-includes/comment-template.php)
-4. (Optional) Optional) Cross-Site Scripting (XSS) via Media File Metadata
+4. (Optional) Cross-Site Scripting (XSS) via Media File Metadata
   - [x] Summary: A user can upload an audio file with meta data containing a script to be exectued once the audio file is added to a post's playlist
     - Vulnerability types: XSS
     - Tested in version: 4.2
@@ -74,3 +76,35 @@ Hello.
   2. Entering in a username but the wrong password, informs us the password is wrong but we can infer that an account with that username does exist. 
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/4.2/src/wp-includes/user.php)
+    
+    
+## Assets
+
+Utilized WPScan to find vulnarebilities in old version of wordpress
+
+## Resources
+
+- [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
+- [WordPress Developer Reference](https://developer.wordpress.org/reference/)
+
+GIFs created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Describe any challenges encountered while doing the work
+
+## License
+
+    Copyright [2019] [Owen Ahmed]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.

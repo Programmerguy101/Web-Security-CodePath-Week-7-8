@@ -1,6 +1,6 @@
 # Web-Security-CodePath-Week-7-8
 
-##Penetrationing Test Report
+## Penetrationing Test Report
 
 
 1. (Required) DOM Cross-Site Scripting (XSS) via Post
@@ -87,7 +87,6 @@ Utilized WPScan to find vulnarebilities in old version of wordpress
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
-GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
